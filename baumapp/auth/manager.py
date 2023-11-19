@@ -4,7 +4,7 @@ from typing import Optional
 from fastapi import Depends, Request
 from fastapi_users import BaseUserManager, UUIDIDMixin, IntegerIDMixin
 
-from .database import User, get_user_db
+from baumapp.database import User, get_user_db
 from baumapp.config import SECRET_VERIF_RESET
 
 SECRET = SECRET_VERIF_RESET
